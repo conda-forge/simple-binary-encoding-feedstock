@@ -25,7 +25,7 @@ outputs:
       run:
     test:
       commands:
-        - test -f ${PREFIX}/lib/sbe-all-{{ version }}.jar  # [unix]
+        - test -f $PREFIX/lib/sbe-all-{{ version }}.jar  # [unix]
 
   - name: sbe-cxx
     script: build-cxx.sh  # [unix]
@@ -44,19 +44,19 @@ outputs:
       run:
     test:
       commands:
-        - test -f ${PREFIX}/include/otf/Encoding.h  # [unix]
-        - test -f ${PREFIX}/include/otf/IrDecoder.h  # [unix]
-        - test -f ${PREFIX}/include/otf/OtfHeaderDecoder.h  # [unix]
-        - test -f ${PREFIX}/include/otf/OtfMessageDecoder.h  # [unix]
-        - test -f ${PREFIX}/include/otf/Token.h  # [unix]
-        - test -f ${PREFIX}/include/otf/uk_co_real_logic_sbe_ir_generated/ByteOrderCodec.h  # [unix]
-        - test -f ${PREFIX}/include/otf/uk_co_real_logic_sbe_ir_generated/FrameCodec.h  # [unix]
-        - test -f ${PREFIX}/include/otf/uk_co_real_logic_sbe_ir_generated/MessageHeader.h  # [unix]
-        - test -f ${PREFIX}/include/otf/uk_co_real_logic_sbe_ir_generated/PresenceCodec.h  # [unix]
-        - test -f ${PREFIX}/include/otf/uk_co_real_logic_sbe_ir_generated/PrimitiveTypeCodec.h  # [unix]
-        - test -f ${PREFIX}/include/otf/uk_co_real_logic_sbe_ir_generated/SignalCodec.h  # [unix]
-        - test -f ${PREFIX}/include/otf/uk_co_real_logic_sbe_ir_generated/TokenCodec.h  # [unix]
-        - test -f ${PREFIX}/include/otf/uk_co_real_logic_sbe_ir_generated/VarDataEncoding.h  # [unix]
+        - test -f $PREFIX/include/otf/Encoding.h  # [unix]
+        - test -f $PREFIX/include/otf/IrDecoder.h  # [unix]
+        - test -f $PREFIX/include/otf/OtfHeaderDecoder.h  # [unix]
+        - test -f $PREFIX/include/otf/OtfMessageDecoder.h  # [unix]
+        - test -f $PREFIX/include/otf/Token.h  # [unix]
+        - test -f $PREFIX/include/otf/uk_co_real_logic_sbe_ir_generated/ByteOrderCodec.h  # [unix]
+        - test -f $PREFIX/include/otf/uk_co_real_logic_sbe_ir_generated/FrameCodec.h  # [unix]
+        - test -f $PREFIX/include/otf/uk_co_real_logic_sbe_ir_generated/MessageHeader.h  # [unix]
+        - test -f $PREFIX/include/otf/uk_co_real_logic_sbe_ir_generated/PresenceCodec.h  # [unix]
+        - test -f $PREFIX/include/otf/uk_co_real_logic_sbe_ir_generated/PrimitiveTypeCodec.h  # [unix]
+        - test -f $PREFIX/include/otf/uk_co_real_logic_sbe_ir_generated/SignalCodec.h  # [unix]
+        - test -f $PREFIX/include/otf/uk_co_real_logic_sbe_ir_generated/TokenCodec.h  # [unix]
+        - test -f $PREFIX/include/otf/uk_co_real_logic_sbe_ir_generated/VarDataEncoding.h  # [unix]
 
 
 about:
@@ -74,7 +74,6 @@ about:
   dev_url: https://github.com/real-logic/simple-binary-encoding
 
 extra:
-  feedstock-name: "simple-binary-encoding"
   recipe-maintainers:
     - zklaus
     - timkpaine
