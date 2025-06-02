@@ -1,5 +1,5 @@
 {% set name = "simple-binary-encoding" %}
-{% set version = "1.35.0" %}
+{% set version = "1.35.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/real-logic/simple-binary-encoding/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 3643eb4bf8947786044cc2a958f72a49723afbf1a55e2cf380fae96c56086dae
+  sha256: 421aae3f72001fc9fa35821c9ffbe88ab861beb4bbe6626c86d456d1ecaa1d2e
   patches:
     - license-report.patch
 
