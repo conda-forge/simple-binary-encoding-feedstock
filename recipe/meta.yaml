@@ -28,8 +28,7 @@ outputs:
         - test -f ${PREFIX}/lib/sbe-all-{{ version }}.jar  # [unix]
 
   - name: sbe-cxx
-    script: build-cxx.sh  # [unix]
-    script: bld-cxx.bat  # [win]
+    script: build-cxx.sh
     requirements:
       build:
         - gradle
